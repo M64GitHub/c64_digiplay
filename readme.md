@@ -1,3 +1,6 @@
+Sample player code for playing digis on the volume register of the Commodore 64 SID chip SID6581.  
+Works only on the old C64, not the C64C, which has the newer SID8580 builtin.
+
 kickass assembly syntax (http://www.theweb.dk/KickAssembler/Main.html)
 
 use kickass to assemble:
