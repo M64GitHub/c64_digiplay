@@ -1,3 +1,5 @@
+# digiplay.asm
+
 Sample player code for playing digis on the volume register of the Commodore 64 SID chip SID6581, in klickass assembly syntax.  
 Works only on the old C64, not the C64C, which has the newer SID8580 builtin.  
 
@@ -10,26 +12,32 @@ The output ("out.raw") is uncompressed and does not pack 2 4-bit digis into a by
 
 The assembly code sources the binary file "out.raw".
 
----
+## Assemble
 
-kickass assembler (http://www.theweb.dk/KickAssembler/Main.html)
+The player is written in kickass assembly syntax - see kickass assembler: http://www.theweb.dk/KickAssembler/Main.html
 
 use kickass to assemble:
 ```
 java –jar /your/path/to/KickAss.jar digiplay.asm -o digiplay.prg
 ```
 
----
-convert sample to 8bit/4kHz:
+## Convert sample to 4bit/4kHz (2 steps):
+
+**1) Use sox to convert to 8bit/4kHz:**  
+
 ```
 sox -S jb.wav -r 4000 -b 8 -e unsigned-integer -t raw in.raw
 ```
-finally convert sample to 4bit/4kHz (creates out.raw):
+
+**2) Use 8to4bit to convert to 4bit/4kHz**  
+
+The small utility 8to4bit.c can be used to create the final output file (creates out.raw):
+
 ```
 cat in.raw ./8to4bit 
 ```
 
----
+## Get / compile sox
 
 get sox from source:
 http://sox.sourceforge.net/
