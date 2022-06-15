@@ -1,7 +1,9 @@
 kickass assembly syntax (http://www.theweb.dk/KickAssembler/Main.html)
 
 use kickass to assemble:
-
+```
+java –jar ~/c64bin/KickAssembler/KickAss.jar digiplay.asm -o digiplay.prg
+```
 
 using sox to convert wav files:
 
