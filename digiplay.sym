@@ -1,0 +1,5 @@
+.label play=$1033
+.label play_addr=$1041
+.label sample_data=$1064
+.label start=$1000
+.label sample_end=$4e12
