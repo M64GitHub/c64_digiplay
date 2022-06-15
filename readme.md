@@ -33,8 +33,10 @@ cat in.raw ./8to4bit
 get sox from source:
 http://sox.sourceforge.net/
 ```
+git clone git://git.code.sf.net/p/sox/code sox
+cd sox
 autoreconfig -i
-configure script: remove warning definitions from 13540 3 lines
+# configure script: remove warning definitions from 13540 3 lines
 ./configure
 make
 ```
