@@ -1,6 +1,8 @@
 Sample player code for playing digis on the volume register of the Commodore 64 SID chip SID6581.  
 Works only on the old C64, not the C64C, which has the newer SID8580 builtin.  
 
+This small demo code plays a high energy beat loop from "L.A. Style - James Brown is dead" - https://www.youtube.com/watch?v=dN8e9b2ON8s  
+
 Wav-samples must be prepared first: converted to 4bit/4kHz, and the raw data extracted (no file header). This is done in 2 steps: using sox to convert sample- and bit-rate. sox can not convert to 4bit well, so the 2nd step uses a quick'n'dirty c executable to do so from 8-bit encoding.  
 The output ("out.raw") is uncompressed and does not pack 2 4-bit digis into a byte. 
 
