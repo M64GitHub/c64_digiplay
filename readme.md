@@ -23,7 +23,7 @@ convert sample to 8bit/4kHz:
 ```
 sox -S jb.wav -r 4000 -b 8 -e unsigned-integer -t raw in.raw
 ```
-finally convert sample to 4bit/4kHz:
+finally convert sample to 4bit/4kHz (creates out.raw):
 ```
 cat in.raw ./8to4bit 
 ```
