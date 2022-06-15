@@ -8,14 +8,24 @@ The assembly code sources the binary file "out.raw".
 
 ---
 
-kickass assembly syntax (http://www.theweb.dk/KickAssembler/Main.html)
+kickass assembler (http://www.theweb.dk/KickAssembler/Main.html)
 
 use kickass to assemble:
 ```
 java –jar /your/path/to/KickAss.jar digiplay.asm -o digiplay.prg
 ```
 
-using sox to convert wav files:
+---
+convert sample to 8bit/4kHz:
+```
+sox -S jb.wav -r 4000 -b 8 -e unsigned-integer -t raw in.raw
+```
+finally convert sample to 4bit/4kHz (creates out.raw):
+```
+cat in.raw ./8to4bit 
+```
+
+---
 
 get sox from source:
 http://sox.sourceforge.net/
@@ -30,13 +40,4 @@ or
 apt-get install sox libsox-fmt-all
 ```
 
----
 
-convert sample to 8bit/4kHz:
-```
-sox -S jb.wav -r 4000 -b 8 -e unsigned-integer -t raw in.raw
-```
-finally convert sample to 4bit/4kHz (creates out.raw):
-```
-cat in.raw ./8to4bit 
-```
