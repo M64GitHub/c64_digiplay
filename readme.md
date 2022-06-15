@@ -1,4 +1,4 @@
-Sample player code for playing digis on the volume register of the Commodore 64 SID chip SID6581.  
+Sample player code for playing digis on the volume register of the Commodore 64 SID chip SID6581, in klickass assembly syntax.  
 Works only on the old C64, not the C64C, which has the newer SID8580 builtin.  
 
 This small demo code plays a high energy beat loop from the song "L.A. Style - James Brown is dead" (https://www.youtube.com/watch?v=dN8e9b2ON8s).
