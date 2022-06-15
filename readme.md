@@ -5,7 +5,7 @@ This small demo code plays a high energy beat loop from the song "L.A. Style - J
 
 I use this occasionally to record "C64 distorted" samples, I love the crunchyness :)  
 
-Wav-samples must be prepared first: converted to 4bit/4kHz, and the raw data extracted (no file header). This is done in 2 steps: using sox to convert sample- and bit-rate. sox can not convert to 4bit well, so the 2nd step uses a quick'n'dirty c executable to do so from 8-bit encoding.  
+Wav-samples must be prepared first: converted to 4bit/4kHz, and the raw sound data extracted (no file header). This is done in 2 steps: using sox to convert sample- and bit-rate. sox can not convert to 4bit well, so the 2nd step uses a quick'n'dirty c executable to do so from 8-bit encoding.  
 The output ("out.raw") is uncompressed and does not pack 2 4-bit digis into a byte. 
 
 The assembly code sources the binary file "out.raw".
