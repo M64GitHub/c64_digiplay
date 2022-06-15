@@ -21,7 +21,7 @@ use kickass to assemble:
 java –jar /your/path/to/KickAss.jar digiplay.asm -o digiplay.prg
 ```
 
-## Convert sample to 4bit/4kHz (2 steps):
+### Convert sample to 4bit/4kHz (2 steps):
 
 **1) Use sox to convert to 8bit/4kHz:**  
 
@@ -37,7 +37,7 @@ The small utility 8to4bit.c can be used to create the final output file (creates
 cat in.raw ./8to4bit 
 ```
 
-## Get / compile sox
+### Get / compile sox
 
 get sox from source:
 http://sox.sourceforge.net/
