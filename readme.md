@@ -29,6 +29,9 @@ or
 ```
 apt-get install sox libsox-fmt-all
 ```
+
+---
+
 convert sample to 8bit/4kHz:
 ```
 sox -S jb.wav -r 4000 -b 8 -e unsigned-integer -t raw in.raw
