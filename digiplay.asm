@@ -1,7 +1,7 @@
 .pc = $0801 "Basic Upstart"
-:BasicUpstart(start)    // 10 sys$0810
+:BasicUpstart(start)   
 
-.pc=$1000 "Program"
+.pc=$1000 "DIGIME"
 
 start:  jsr waitkey
                 lda #$00      
