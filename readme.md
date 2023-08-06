@@ -34,7 +34,7 @@ sox -S jb.wav -r 4000 -b 8 -e unsigned-integer -t raw in.raw
 The small utility 8to4bit.c can be used to create the final output file (creates out.raw):
 
 ```
-cat in.raw ./8to4bit 
+cat in.raw | ./8to4bit 
 ```
 
 ### Get / compile sox
